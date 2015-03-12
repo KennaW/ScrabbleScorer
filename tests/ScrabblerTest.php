@@ -20,17 +20,30 @@
 
         }
 
-        function testSingleLetterHigherScore()
+        function testSingleLetterTwoPoints()
         {
             //Arrange
-            $single_letter_higher_score = new Scrabbler;
+            $single_letter_two_points = new Scrabbler;
             $input = "D";
 
             //Act
-            $result = $single_letter_higher_score->calculateScore($input);
+            $result = $single_letter_two_points->calculateScore($input);
 
             //Assert
             $this->assertEquals("Score: 2", $result);
+        }
+
+        function testSingleLetterThreePoints()
+        {
+            //Arrange
+            $single_letter_three_points = new Scrabbler;
+            $input = "B";
+
+            //Act
+            $result = $single_letter_three_points->calculateScore($input);
+
+            //Assert
+            $this->assertEquals("Score: 3", $result);
         }
     }
 ?>
