@@ -12,7 +12,7 @@
 
         function calculateScore($input)
         {
-            // $input = strtoupper($input);
+            $input = strtoupper($input);
             $point_counter = 0;
             if(in_array($input, $this->one_point)){
                 $point_counter += 1;
