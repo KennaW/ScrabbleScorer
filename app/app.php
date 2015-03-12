@@ -15,7 +15,7 @@
     $app->get("/score", function() use ($app){
             $userWord = $_GET['wordinput'];
             $wordScore = new Scrabbler();
-            $your_score = $wordScore->calculatescore($userWord);
+            $your_score = $wordScore->calculateScore($userWord);
             return $app['twig']->render('score.twig', array('result' => $your_score));
 
 
