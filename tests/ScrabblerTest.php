@@ -98,5 +98,18 @@
             //Assert
             $this->assertEquals("Score: 10", $result);
         }
+
+        function testLowerCase()
+        {
+            //Arrange
+            $test_lowercase = new Scrabbler;
+            $input = "a";
+
+            //Act
+            $result = $test_lowercase->calculateScore($input);
+
+            //Assert
+            $this->assertEquals("Score: 1", $result);
+        }
     }
 ?>
