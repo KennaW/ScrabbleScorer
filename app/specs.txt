@@ -4,29 +4,38 @@ SPEKS!
     Input: "A"
     Output: "Score: 1"
 
-2   Take a single letter and return a different score.
+2   Take a single letter and return a different score to check a new score level.
     Input: "D"
     Output: "Score: 2"
 
-3   Take two letter string of the same characters and return the sum score.
+3   Take two letter string of the same characters and return the sum score, to start
+    processing multi-letter inputs.
     Input: "AA"
     Output: "Score: 2"
 
-4   Take two different characters of the same score, and return the sum score
+4   Take two different characters of the same score, and return the sum score.  To check that many
+    letters can return the same point score.
     Input: "TO"
     Output: "Score: 2"
 
 5   Take two different letters of different point values in a string and return the composite score.
+    To show that different letters can have different scores.
     Input: "DF"
     Output: "Score: 6"
 
 6   Take multiple letters with at least two of the same point value and return composite score.
+    To show that some letters can have same score mixed with letters of different score.
     Input: "TEA"
     Output: "Score: 3"
 
-5   Take a full word in a string a return the composite score.
+7   Take three letters of all different scores in a string a return the composite score.
+    To show multiple scores work.
     Input: "COW"
     Output: "Score: 8"
+
+8   Take a long string and return composite score.  To show that all features are combined.
+    Input: "QUICKLY"
+    Output: "Score: 25"
 
 Add why
 same point values between 3 and 4, 4 and 5
