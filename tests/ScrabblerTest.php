@@ -124,5 +124,18 @@
             //Assert
             $this->assertEquals("Score: 2", $result);
         }
+
+        function testLongString()
+        {
+            //Arrange
+            $test_long_string = new Scrabbler;
+            $input = "quickly";
+
+            //Act
+            $result = $test_long_string->calculateScore($input);
+
+            //Assert
+            $this->assertEquals("Score: 25", $result);
+        }
     }
 ?>
