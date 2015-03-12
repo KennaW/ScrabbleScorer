@@ -72,5 +72,18 @@
             //Assert
             $this->assertEquals("Score: 5", $result);
         }
+
+        function testSingleLetterEightPoints()
+        {
+            //Arrange
+            $single_letter_eight_points = new Scrabbler;
+            $input = "J";
+
+            //Act
+            $result = $single_letter_eight_points->calculateScore($input);
+
+            //Assert
+            $this->assertEquals("Score: 8", $result);
+        }
     }
 ?>
