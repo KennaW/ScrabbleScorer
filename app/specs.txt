@@ -1,0 +1,9 @@
+SPEKS!
+
+1   Take the simplest input of a single character and return the score.
+    Input: "A"
+    Output: "Score: 1"
+
+2   Take a single letter and return a different score.
+    Input: "D"
+    Output: "Score: 2"
