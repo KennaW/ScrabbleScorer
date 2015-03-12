@@ -8,6 +8,26 @@ SPEKS!
     Input: "D"
     Output: "Score: 2"
 
+    Take a single letter of three points and return score.
+    Input: "B"
+    Output: "Score: 3"
+
+    Take a single letter of four points and return score.
+    Input: "F"
+    Output: "Score: 4"
+
+    Take a single letter of five points and return score.
+    Input: "K"
+    Output: "Score: 5"
+
+    Take a single letter of eight points and return score.
+    Input: "J"
+    Output: "Score: 8"
+
+    Take a single letter of ten points and return score.
+    Input: "Q"
+    Output: "Score: 10"
+
 3   Take two letter string of the same characters and return the sum score, to start
     processing multi-letter inputs.
     Input: "AA"
