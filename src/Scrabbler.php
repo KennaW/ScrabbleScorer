@@ -12,8 +12,10 @@
 
         function calculateScore($input)
         {
+
             $input = strtoupper($input);
             $point_counter = 0;
+
             if(in_array($input, $this->one_point)){
                 $point_counter += 1;
             }
@@ -35,6 +37,7 @@
             if(in_array($input, $this->ten_point)){
                 $point_counter += 10;
             }
+
             return "Score: " . $point_counter;
         }
     }
