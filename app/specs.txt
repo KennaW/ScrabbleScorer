@@ -12,10 +12,21 @@ SPEKS!
     Input: "AA"
     Output: "Score: 2"
 
-4   Take two different letters in a string and return the composite score.
+4   Take two different characters of the same score, and return the sum score
+    Input: "TO"
+    Output: "Score: 2"
+
+5   Take two different letters of different point values in a string and return the composite score.
     Input: "DF"
     Output: "Score: 6"
+
+6   Take multiple letters with at least two of the same point value and return composite score.
+    Input: "TEA"
+    Output: "Score: 3"
 
 5   Take a full word in a string a return the composite score.
     Input: "COW"
     Output: "Score: 8"
+
+Add why
+same point values between 3 and 4, 4 and 5
