@@ -85,5 +85,18 @@
             //Assert
             $this->assertEquals("Score: 8", $result);
         }
+
+        function testSingleLetterTenPoints()
+        {
+            //Arrange
+            $single_letter_ten_points = new Scrabbler;
+            $input = "Q";
+
+            //Act
+            $result = $single_letter_ten_points->calculateScore($input);
+
+            //Assert
+            $this->assertEquals("Score: 10", $result);
+        }
     }
 ?>
