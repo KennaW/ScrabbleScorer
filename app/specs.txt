@@ -7,3 +7,4 @@ SPEKS!
 2   Take a single letter and return a different score.
     Input: "D"
     Output: "Score: 2"
+    
