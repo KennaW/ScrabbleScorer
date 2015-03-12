@@ -7,4 +7,15 @@ SPEKS!
 2   Take a single letter and return a different score.
     Input: "D"
     Output: "Score: 2"
-    
+
+3   Take two letter string of the same characters and return the sum score.
+    Input: "AA"
+    Output: "Score: 2"
+
+4   Take two different letters in a string and return the composite score.
+    Input: "DF"
+    Output: "Score: 6"
+
+5   Take a full word in a string a return the composite score.
+    Input: "COW"
+    Output: "Score: 8"
