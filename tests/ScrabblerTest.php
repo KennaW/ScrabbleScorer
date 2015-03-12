@@ -45,5 +45,18 @@
             //Assert
             $this->assertEquals("Score: 3", $result);
         }
+
+        function testSingleLetterFourPoints()
+        {
+            //Arrange
+            $single_letter_four_points = new Scrabbler;
+            $input = "F";
+
+            //Act
+            $result = $single_letter_four_points->calculateScore($input);
+
+            //Assert
+            $this->assertEquals("Score: 4", $result);
+        }
     }
 ?>
