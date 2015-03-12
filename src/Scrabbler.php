@@ -4,6 +4,8 @@
         private $one_point = array('A', 'E', 'I', 'O', 'U', 'L', 'N', 'R', 'S', 'T');
         private $two_point = array('D', 'G');
         private $three_point = array('B', 'C', 'M', 'P');
+        private $four_point = array('F', 'H', 'V', 'W', 'Y');
+        //k is in its own if statement
 
         function calculateScore($input)
         {
@@ -16,6 +18,9 @@
             }
             if(in_array($input, $this->three_point)){
                 $point_counter += 3;
+            }
+            if(in_array($input, $this->four_point)){
+                $point_counter += 4;
             }
             return "Score: " . $point_counter;
         }
