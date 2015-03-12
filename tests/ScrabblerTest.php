@@ -58,5 +58,19 @@
             //Assert
             $this->assertEquals("Score: 4", $result);
         }
+
+        function testK()
+        {
+
+            //Arrange
+            $single_letter_k = new Scrabbler;
+            $input = "K";
+
+            //Act
+            $result = $single_letter_k-> calculateScore($input);
+
+            //Assert
+            $this->assertEquals("Score: 5", $result);
+        }
     }
 ?>
