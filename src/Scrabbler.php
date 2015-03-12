@@ -14,28 +14,33 @@
         {
 
             $input = strtoupper($input);
+
+            $input = str_split($input);
+
             $point_counter = 0;
 
-            if(in_array($input, $this->one_point)){
-                $point_counter += 1;
-            }
-            if(in_array($input, $this->two_point)){
-                $point_counter += 2;
-            }
-            if(in_array($input, $this->three_point)){
-                $point_counter += 3;
-            }
-            if(in_array($input, $this->four_point)){
-                $point_counter += 4;
-            }
-            if($input == "K"){
-                $point_counter += 5;
-            }
-            if(in_array($input, $this->eight_point)){
-                $point_counter += 8;
-            }
-            if(in_array($input, $this->ten_point)){
-                $point_counter += 10;
+            foreach($input as $letter) {
+                if(in_array($letter, $this->one_point)){
+                    $point_counter += 1;
+                }
+                if(in_array($letter, $this->two_point)){
+                    $point_counter += 2;
+                }
+                if(in_array($letter, $this->three_point)){
+                    $point_counter += 3;
+                }
+                if(in_array($letter, $this->four_point)){
+                    $point_counter += 4;
+                }
+                if($letter == "K"){
+                    $point_counter += 5;
+                }
+                if(in_array($letter, $this->eight_point)){
+                    $point_counter += 8;
+                }
+                if(in_array($letter, $this->ten_point)){
+                    $point_counter += 10;
+                }
             }
 
             return "Score: " . $point_counter;
