@@ -5,7 +5,7 @@
     Class ScrabblerTest extends PHPUnit_Framework_TestCase
     {
 
-        function test_ScrabblerSingleLetter()
+        function testScrabblerSingleLetter()
         {
 
             //Arrange
@@ -19,5 +19,18 @@
             $this->assertEquals("Score: 1", $result);
 
         }
+
+        // function testSingleLetterHigherScore()
+        // {
+        //     //Arrange
+        //     $single_letter_higher_score = new Scrabbler;
+        //     $input = "D";
+        //
+        //     //Act
+        //     $result = $single_letter_higher_score->calculateScore($input);
+        //
+        //     //Assert
+        //     $this->assertEquals("Score: 2", $result);
+        // }
     }
 ?>

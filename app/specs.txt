@@ -36,6 +36,3 @@ SPEKS!
 8   Take a long string and return composite score.  To show that all features are combined.
     Input: "QUICKLY"
     Output: "Score: 25"
-
-Add why
-same point values between 3 and 4, 4 and 5
