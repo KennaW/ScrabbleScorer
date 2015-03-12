@@ -111,5 +111,18 @@
             //Assert
             $this->assertEquals("Score: 1", $result);
         }
+
+        function testTwoSameLetter()
+        {
+            //Arrange
+            $test_two_same_letter = new Scrabbler;
+            $input = "AA";
+
+            //Act
+            $result = $test_two_same_letter->calculateScore($input);
+
+            //Assert
+            $this->assertEquals("Score: 2", $result);
+        }
     }
 ?>
