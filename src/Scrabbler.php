@@ -22,6 +22,9 @@
             if(in_array($input, $this->four_point)){
                 $point_counter += 4;
             }
+            if($input == "K"){
+                $point_counter += 5;
+            }
             return "Score: " . $point_counter;
         }
     }
