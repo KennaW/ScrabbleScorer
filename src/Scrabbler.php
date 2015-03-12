@@ -5,7 +5,9 @@
         private $two_point = array('D', 'G');
         private $three_point = array('B', 'C', 'M', 'P');
         private $four_point = array('F', 'H', 'V', 'W', 'Y');
-        //k is in its own if statement
+        //k is in its own if statement, is worth 5 points
+        private $eight_point = array('J', 'X');
+
 
         function calculateScore($input)
         {
@@ -24,6 +26,9 @@
             }
             if($input == "K"){
                 $point_counter += 5;
+            }
+            if(in_array($input, $this->eight_point)){
+                $point_counter += 8;
             }
             return "Score: " . $point_counter;
         }
